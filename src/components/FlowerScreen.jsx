@@ -110,14 +110,20 @@ export default function FlowerScreen({ active, onBack }) {
                 fontFamily: "'Cormorant Garamond', serif",
                 color: "#6b4f44",
                 fontStyle: "italic",
+                whiteSpace: "pre-line",
               }}
             >
-              This isn’t just a bouquet.
-              <br />
-              It’s a small piece of how I see you — calm, beautiful, and warm in
-              ways I can’t always explain properly.
-              <br />I hope every flower here reminds you that you are
-              appreciated more than words can show.
+              {`I never really had the chance aapko real life mein bouquet dene ka both the times I missed it 🥹
+
+Toh socha virtually hi sahi here’s a little bouquet for you 💗
+
+And I hope these flowers are tulips 😭 because ik how much you like tulips 🌷
+
+This isn’t just a bouquet
+
+It’s more like… how do I say it each flower is just like u beautiful and warm in ways I can’t even explain properly
+
+I hope every flower idhar ka reminds you that you’re appreciated and loved more than words can ever show ❤️`}
             </p>
 
             <button

@@ -19,7 +19,6 @@ export default function Keypad({ onSubmit }) {
 
   const handleSubmit = () => {
     if (password.length === 4) {
-      console.log("Password submitted:", password);
       if (onSubmit) onSubmit(password);
     }
   };
@@ -50,7 +49,7 @@ export default function Keypad({ onSubmit }) {
       {/* Heart & title */}
       <div className="mb-5">
         <div
-          className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full mb-3 transition-transform duration-300 hover:scale-110 hover:rotate-6"
+          className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full mb-3 transition-transform duration-300 hover:scale-110 hover:rotate-6 [@media(max-height:720px)]:hidden"
           style={{ background: "linear-gradient(135deg, #fffdd0, #fff4c4)" }}
         >
           <svg

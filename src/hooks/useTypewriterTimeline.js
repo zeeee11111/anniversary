@@ -49,7 +49,7 @@ export default function useTypewriterTimeline() {
       return text.split("").map((char) => {
         const span = document.createElement("span");
         span.textContent = char;
-        if (char === " ") span.style.whiteSpace = "pre";
+        if (char === " ") span.style.whiteSpace = "pre-wrap";
         span.style.opacity = 0;
         h.appendChild(span);
         return span;

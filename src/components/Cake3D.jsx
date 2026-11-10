@@ -5,7 +5,8 @@ import * as THREE from "three";
 import gsap from "gsap";
 
 // Preload the model
-useGLTF.preload("/models/strawberry_cake.glb");
+const CAKE_MODEL = `${import.meta.env.BASE_URL}models/strawberry_cake.glb`;
+useGLTF.preload(CAKE_MODEL);
 
 /* ==========================
    Microphone blow detector
@@ -115,7 +116,7 @@ function Flame({ position, lit }) {
    3D cake scene
    ========================== */
 function CakeScene({ candlesLit, setCandlesLit, micRequested }) {
-  const { scene } = useGLTF("/models/strawberry_cake.glb");
+  const { scene } = useGLTF(CAKE_MODEL);
   const flameNames = [
     "pCone1_orange_fire_0",
     "pCone2_orange_fire_0",
@@ -461,15 +462,18 @@ export default function Cake3D({ onNext }) {
       <div className="w-full text-center pb-6">
         {!allOut ? (
           <button
-            onClick={() => setMicRequested(true)}
-            disabled={micRequested}
-            className="px-6 py-3 rounded-full font-bold text-white bg-red-500 hover:bg-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+            onClick={() => {
+              // Second tap blows the candles out, so a blocked mic never leaves her stuck
+              if (micRequested) setCandlesLit((lit) => lit.map(() => false));
+              else setMicRequested(true);
+            }}
+            className="px-6 py-3 rounded-full font-bold text-white bg-red-500 hover:bg-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 active:scale-95"
             style={{
               fontFamily: "'Montserrat', sans-serif",
               fontSize: "clamp(0.9rem, 3vw, 1.1rem)",
             }}
           >
-            {micRequested ? "🔊 Listening... Blow now!" : "🎤 Tap to Blow"}
+            {micRequested ? "🔊 Blow now! (or tap again)" : "🎤 Tap to Blow"}
           </button>
         ) : (
           <p
@@ -479,7 +483,7 @@ export default function Cake3D({ onNext }) {
               fontSize: "clamp(1rem, 3.5vw, 1.4rem)",
             }}
           >
-            🎉 Happy Birthday, baby girl!
+            🎉 Happy 10 Month Anniversary, my love!
           </p>
         )}
       </div>

@@ -3,7 +3,6 @@ import gsap from "gsap";
 import useTypewriterTimeline from "./hooks/useTypewriterTimeline";
 import Background from "./components/Background";
 import TypewriterSequence from "./components/TypewriterSequence";
-import RotationHint from "./components/RotationHint";
 import BirthdayCelebration from "./components/BirthdayCelebration";
 import ProudMessage from "./components/ProudMessage";
 import Cake3D from "./components/Cake3D";
@@ -15,7 +14,6 @@ import LockScreen from "./components/LockScreen"; // ← new
 
 export default function App() {
   const [isPhone, setIsPhone] = useState(null);
-  const [showHint, setShowHint] = useState(false);
   const [backgroundGone, setBackgroundGone] = useState(false);
   const [finalCream, setFinalCream] = useState(false);
 
@@ -30,11 +28,10 @@ export default function App() {
   const screen8Ref = useRef(null); // 7 Lock
   const transitionOngoing = useRef(false);
 
-  const hintRef = useRef(null);
   const refs = useTypewriterTimeline();
   const { revealMainContent } = refs;
 
-  // ---- Phone detection & hint (unchanged) ----
+  // ---- Phone detection ----
   useEffect(() => {
     const checkWidth = () => setIsPhone(window.innerWidth < 640);
     checkWidth();
@@ -43,36 +40,9 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    setShowHint(isPhone === true);
-  }, [isPhone]);
-
-  useEffect(() => {
-    if (isPhone === false) revealMainContent();
+    if (isPhone !== null) revealMainContent();
   }, [isPhone, revealMainContent]);
 
-  useEffect(() => {
-    if (!showHint || !hintRef.current) return;
-    const el = hintRef.current;
-    gsap.set(el, { willChange: "transform, opacity" });
-    const tl = gsap.timeline({
-      onComplete: () => {
-        gsap.set(el, { clearProps: "willChange" });
-        setShowHint(false);
-        revealMainContent();
-      },
-    });
-    tl.fromTo(
-      el,
-      { opacity: 0, y: 15 },
-      { opacity: 1, y: 0, duration: 2.5, ease: "power2.out" },
-    )
-      .to(el, { opacity: 1, duration: 1.0 })
-      .to(el, { opacity: 0, y: -5, duration: 2.0, ease: "power2.in" });
-    return () => {
-      tl.kill();
-      gsap.set(el, { clearProps: "willChange" });
-    };
-  }, [showHint, revealMainContent]);
 
   const handleSuccess = () => setBackgroundGone(true);
   const handleVideoEnd = () => setFinalCream(true);
@@ -175,7 +145,7 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen relative overflow-hidden"
+      className="h-[100dvh] relative overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
       {!backgroundGone && <Background />}
@@ -197,6 +167,7 @@ export default function App() {
             style={{ display: screenIndex === 0 ? "block" : "none" }}
           >
             <BirthdayCelebration />
+            <button type="button" onClick={() => transition(1)} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[60] rounded-full bg-red-600 px-8 py-3 font-bold text-white shadow-lg hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700">Continue →</button>
           </div>
 
           {/* 1 – Proud */}
@@ -206,6 +177,7 @@ export default function App() {
             style={{ display: screenIndex === 1 ? "block" : "none" }}
           >
             <ProudMessage />
+            <button type="button" onClick={() => transition(2)} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[60] rounded-full bg-red-600 px-8 py-3 font-bold text-white shadow-lg hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700">Continue →</button>
           </div>
 
           {/* 2 – Cake */}
@@ -282,7 +254,6 @@ export default function App() {
         </>
       )}
 
-      {isPhone === true && showHint && <RotationHint hintRef={hintRef} />}
     </div>
   );
 }

@@ -95,17 +95,17 @@ export default function TypewriterSequence({ refs, onSuccess, onVideoEnd }) {
     if (failCount === 0)
       return {
         sticker: amazedSparkle,
-        text: "Enter our special telegram code",
+        text: "Enter our special code",
       };
     if (failCount === 1)
       return {
         sticker: thinking,
-        text: "I think you mistyped the password.\nIt is our telegram code!",
+        text: "I think you mistyped the password.\nIt is our special code!",
       };
     if (failCount === 2)
       return {
         sticker: sad,
-        text: "Please try hard.\nIt is our telegram code.",
+        text: "Please try hard.\nIt is our special code.",
       };
     return {
       sticker: cry,
@@ -181,7 +181,7 @@ export default function TypewriterSequence({ refs, onSuccess, onVideoEnd }) {
 
   // --- Password submit ---
   const handlePasswordSubmit = (password) => {
-    if (password === "1027") {
+    if (password === "0414") {
       setIsSuccess(true);
     } else {
       setWrongPassword(true);
@@ -212,7 +212,7 @@ export default function TypewriterSequence({ refs, onSuccess, onVideoEnd }) {
   return (
     <>
       {/* ---- Typewriter ---- */}
-      <div ref={mainRef} className="min-h-screen relative opacity-0 px-4 z-10">
+      <div ref={mainRef} className="h-[100dvh] relative opacity-0 px-4 z-10">
         <HeadingContainer
           containerRef={heading1ContainerRef}
           hRef={heading1Ref}
@@ -248,17 +248,17 @@ export default function TypewriterSequence({ refs, onSuccess, onVideoEnd }) {
         {/* Left panel – scrollable if content overflows */}
         <div
           ref={leftPanelRef}
-          className="absolute left-0 top-0 h-full w-1/2 flex items-center justify-center overflow-y-auto min-h-0"
+          className="absolute left-0 top-0 h-[34%] w-full sm:h-full sm:w-1/2 flex items-center justify-center overflow-y-auto min-h-0"
           style={{ backgroundColor: "#FF0000" }}
         >
           <div
             ref={leftContentRef}
-            className="flex flex-col items-center gap-4 opacity-0 scale-0 px-4"
+            className="flex flex-col items-center gap-2 sm:gap-4 opacity-0 scale-0 px-4"
           >
             <img
               src={redPanelContent.sticker}
               alt=""
-              className="w-56 h-56 sm:w-72 sm:h-72 object-contain drop-shadow-lg"
+              className="w-28 h-28 sm:w-72 sm:h-72 object-contain drop-shadow-lg"
             />
             <p
               className="text-white text-center font-medium leading-relaxed whitespace-pre-line"
@@ -276,7 +276,7 @@ export default function TypewriterSequence({ refs, onSuccess, onVideoEnd }) {
         {/* Right panel – scrollable if keypad overflows */}
         <div
           ref={rightPanelRef}
-          className="absolute right-0 top-0 h-full w-1/2 flex items-center justify-center p-4 overflow-y-auto min-h-0"
+          className="absolute right-0 bottom-0 h-[66%] w-full sm:top-0 sm:h-full sm:w-1/2 flex items-center justify-center p-4 overflow-y-auto min-h-0"
           style={{ backgroundColor: "#FFFDD0" }}
         >
           <div ref={keypadRef} className="opacity-0 scale-0">
@@ -299,7 +299,7 @@ export default function TypewriterSequence({ refs, onSuccess, onVideoEnd }) {
           <img
             src={mayaowl}
             alt="Maya owl"
-            className="w-64 h-64 sm:w-80 sm:h-80 object-contain"
+            className="w-48 h-48 sm:w-80 sm:h-80 object-contain"
           />
           <p
             className="text-center text-red-600 font-semibold leading-snug"

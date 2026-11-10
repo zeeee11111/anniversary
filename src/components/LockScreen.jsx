@@ -30,12 +30,19 @@ export default function LockScreen({ active, onBack }) {
     });
   };
 
+  // Only one video plays at a time
+  const pauseOthers = (e) => {
+    containerRef.current
+      ?.querySelectorAll("video")
+      .forEach((v) => v !== e.target && v.pause());
+  };
+
   if (!active) return null;
 
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 z-50 overflow-y-auto bg-white flex items-center justify-center px-4 py-6"
+      className="absolute inset-0 z-50 overflow-y-auto bg-white flex justify-center px-4 py-8"
     >
       <div className="w-full max-w-2xl flex flex-col items-center">
         {/* 1. Header */}
@@ -46,53 +53,14 @@ export default function LockScreen({ active, onBack }) {
             fontSize: "clamp(0.9rem, 3vw, 1.4rem)",
           }}
         >
-          This song reminds me of you (˶˃ ᵕ ˂˶)
+          These songs remind me of you (˶˃ ᵕ ˂˶)
         </p>
 
-        {/* 2. YouTube video – already responsive */}
-        <div
-          className="w-full max-w-[560px] mb-4"
-          style={{ aspectRatio: "16/9" }}
-        >
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/_jBxIzrxfCs?si=L9NX29KoebBtdl-B"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="w-full h-full rounded-xl shadow-lg"
-          />
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+          {["song-1.mp4", "song-2.mp4", "song-3.mp4", "song-4.mp4"].map((file) => `${import.meta.env.BASE_URL}songs/${file}`).map((video, index) => (
+            <video key={video} src={`${video}#t=0.1`} onPlay={pauseOthers} controls playsInline preload="metadata" aria-label={`Song video ${index + 1}`} className="w-full max-h-[65vh] rounded-xl shadow-lg bg-black" />
+          ))}
         </div>
-
-        {/* 3. Song title */}
-        <p
-          className="text-center font-semibold text-red-600 mb-4 sm:mb-6"
-          style={{
-            fontFamily: "'Montserrat', sans-serif",
-            fontSize: "clamp(0.85rem, 2.5vw, 1.2rem)",
-          }}
-        >
-          ထူးအယ်လင်း - မင်းလေးနားလည်
-        </p>
-
-        {/* 4. Dotted line */}
-        <div className="w-full h-0 border-t-4 border-dotted border-red-600 mb-4 sm:mb-6 opacity-80" />
-
-        {/* 5. Biggest header */}
-        <h1
-          className="text-center font-bold mb-6 sm:mb-8"
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            color: "#FF0000",
-            fontSize: "clamp(2rem, 8vw, 4rem)",
-            lineHeight: 1.2,
-          }}
-        >
-          Song about you
-        </h1>
 
         {/* 6. Return button */}
         <button

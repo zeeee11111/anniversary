@@ -203,211 +203,82 @@ export default function MessageScreen({ active, onBack }) {
         style={{ animationDelay: "1s" }}
       ></div>
 
-      {/* Hero Section (unchanged) */}
-      <header className="w-full px-4 sm:px-6 py-16 sm:py-24 md:py-32 lg:py-40 flex flex-col items-center text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <p className="font-body text-amber-700 text-base sm:text-lg md:text-xl tracking-widest uppercase animate-fade-up delay-1 font-light">
-            To my dearest love
-          </p>
-          <div className="mt-8 animate-fade-up delay-2">
-            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-stone-800 leading-tight romantic-glow">
-              Happy 20th Birthday
-            </h1>
-          </div>
-          <div className="flex justify-center mt-10 animate-fade-up delay-2">
-            <div className="section-divider"></div>
-          </div>
-          <p className="font-body text-stone-600 text-lg sm:text-xl md:text-2xl italic mt-8 animate-fade-up delay-3 leading-relaxed">
-            ပါဗျ ကိုကိုအချစ်ရဆုံး​ကောင်မ​လေး​ရေ 🥰
-          </p>
-          <div className="mt-12 hero-accent">
-            <svg
-              width="60"
-              height="60"
-              viewBox="0 0 60 60"
-              fill="none"
-              className="mx-auto opacity-30"
-            >
-              <path
-                d="M30 45C22.8 45 15 40 15 30C15 20 22 15 30 15C38 15 45 20 45 30C45 40 38 45 30 45Z"
-                stroke="#d4a574"
-                strokeWidth="1.5"
-                opacity="0.5"
-              />
-              <circle cx="30" cy="30" r="2" fill="#d4a574" opacity="0.5" />
-            </svg>
-          </div>
-        </div>
+      <header className="w-full px-4 sm:px-6 pt-16 sm:pt-24 pb-10 flex flex-col items-center text-center relative z-10">
+        <p className="font-body text-amber-700 text-base sm:text-lg tracking-widest uppercase">To My Dearest Potato ❤️</p>
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl text-stone-800 leading-tight romantic-glow mt-8 max-w-4xl">Happy 10th month Anniversary jaanu my bubu my cute potatoooo 😭❤️🫂</h1>
+        <div className="section-divider mt-10"></div>
       </header>
+      <main className="w-full max-w-4xl mx-auto px-4 sm:px-6 pb-24 relative z-10">
+        <section className="letter-section font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose whitespace-pre-line">
+          {`Idk kaha se start karu it’s like I have sooo much to say but words hi nahi milre 😭 I loveeeee you sooo much potato ❤️ and I genuinely mean it when I say you’re one of the most beautiful things that ever happened to me
 
-      {/* Main Letter Content (unchanged) */}
-      <main className="w-full max-w-4xl mx-auto px-4 sm:px-6 pb-24 lg:pb-32 relative z-10">
-        {/* Section 1 */}
-        <section className="letter-section mb-16 sm:mb-20 animate-fade-up delay-4">
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose">
-            ဒီ​နေ့က က​လေး​လေးရဲ့​မွေး​နေ့ဖြစ်​တဲ့အပြင် က​လေး​လေးဘ၀ရဲ့ chapter
-            သစ်တစ်ခု စတင်လိုက်တဲ့​နေ့​လေးဖြစ်လို ကိုကိုအတွက် တကယ်ကို
-            ထူးခြားတဲ့​​နေ့​လေးပါဗျ 🥰
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            က​လေး​လေးရဲ့ ဆယ်​ကျောက်သက်အရွယ်​လေး ကုန်ဆုံးသွားပြီဆို​ပေမယ့်
-            ​ရှေ့​လျောက်ကြုံ​တွေ့ရမယ့် အ​ကောင်းဆုံးနှစ်​တွေက အခုမှ လာမှာပါဗျ 🥰
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            ဒီခရီးလမ်းမှာ က​လေး​လေးနဲ့ အတူရှိခွင့်ရတဲ့အတွက်လည်း ကိုကို တကယ်ပဲ​
-            ​ကျေးဇူးတင်ပါတယ်ဗျ 💕
-          </p>
+It’s like jab bhi I think about us na I just smile like an idiot 😭❤️ thank you sooo much baby for always being there for me for doing sooo many things for me jo shayad mai kabhi bhool bhi nahi sakta all the vc videos like being there for me when im not okay and making sure till i feel im okay I know ap mere liye kitne risks liye even after getting caught at home and going through so much you still u didn’t leave me 😭❤️ and baby I don’t think I can ever explain how much that means to me
+
+And potatoooo do you remember our first kiss 😭😭❤️ theater ki stairs ke pas I swear that moment was sooo beautiful it’s like whenever I remember it na aankhon mein aansu aa jare ❤️ I wish I could go back to that exact moment just once and experience everything again the way you were there so close to me and everything around us just felt like it stopped for a second 😭❤️
+
+~ Tum chaand si haseen, Sitaron si roshan lagti ho..
+
+Masoomiyat mein bhi ek, Ada-e-khaas lagti ho..
+
+Sheesha kya samjhe,
+
+Tumhari khubsurti ka raaz..
+
+Meri aankhon se pucho
+
+Tum kitni lajawab lagti ho
+
+Baby I also wanna say sorry I’m sorry for all the times I couldn’t fulfil your expectations for the times I didn’t give you enough time and for the times I made you feel like you weren’t my priority 😭 it’s like you do sooo much for me and sometimes I feel I haven’t done even half of what you deserve and I know just saying sorry isn’t enough baby I really wanna become better for you and show it through my actions not just words 🫂❤️ because you deserve sooo much love care attention and happiness
+
+There’s this Asqhique 2 dialogue u remind me of
+
+Yeh zindagi chal toh rahi thi ... par tere aane se maine jeena shuru kiya
+
+And baby there’s a Japanese lines from so long I wanted to tell you
+
+何度生まれ変わっても、君を選ぶ ❤️
+
+Nando umarekawattemo kimi wo erabu
+
+“Even if I were born a thousand times, I'd still choose you.”
+
+君は僕の宝物だよ 💗
+
+Kimi wa boku no takaramono da yo
+
+“You are my treasure.”
+
+君と出会えてよかった 🫂
+
+Kimi to deaete yokatta
+
+“I'm so glad I met you.”
+
+And it’s like baby even if I don’t say I love you every single second I hope you always know how much I love you and how special you are to me
+
+Ishq par zor nahin hai ye woh aatish Ghalib
+
+Ke lagaaye na lage aur bujhaaye na bane ❤️
+
+I don’t know what our future holds potato but I know one thing for sure I wanna experience soooo many more beautiful moments with you ❤️ more dates more random conversations more hugs more kisses and more memories that we’ll look back at and smile like idiots 😭❤️
+
+I love you sooo sooo sooo much meri jaanu meri bubu meri cutest little potatooooo ❤️🫂
+
+Thank you for choosing me even on the difficult days
+
+Thank you for not giving up on us
+
+And thank you for being there always baby ❤️
+
+Happy 10Th Month Anniversary my potatoooo 😭❤️`}
         </section>
-
-        {/* Quote Highlight */}
-        <div className="my-16 sm:my-20 md:my-24 animate-fade-up delay-5">
-          <div className="quote-box">
-            <p className="font-display text-2xl sm:text-3xl md:text-4xl text-amber-900 italic leading-snug">
-              က​လေး​လေးက ကိုကိုအတွက် စကားလုံး​တွေနဲ့​တောင်
-              ​ဖော်ပြလိုမရနိုင်​လောက်​အောင် အဓိပ္ပါယ်အရမ်းရှိတဲ့သူ
-            </p>
-          </div>
-          <div className="flex justify-center mt-10">
-            <div className="section-divider"></div>
-          </div>
-        </div>
-
-        {/* Section 2 */}
-        <section className="letter-section mb-16 sm:mb-20 animate-fade-up delay-5">
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose">
-            ကိုကို ​ဘေးမှာ အမြဲရှိ အမြဲ support ​ပေးတဲ့အတွက်လည်း ကိုကို
-            အရမ်း​ကျေးဇူးတင်ပါတယ်ဗျ 🫂
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            က​လေး​လေး ကအသက်၂၀ပြည့်​လည်း ကိုကိုအတွက်
-            အမြဲချစ်စရာ​ကောင်းတဲ့က​လေး​​လေး ဖြစ်​နေမှာပါဗျ 😚
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            က​လေး​လေးအသက်ပိုကြီးလာ​လေ​လေ ကိုကိုက ပိုချစ်လာ​လေပါဗျ 💘
-          </p>
-        </section>
-
-        {/* Section 3 */}
-        <section className="letter-section mb-16 sm:mb-20 animate-fade-up delay-6">
-          <h2 className="section-title font-display text-2xl sm:text-3xl md:text-4xl text-stone-800 mb-8">
-            About You
-          </h2>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose">
-            က​လေး​လေးဟာ ရုပ်ရည်လှပတာသာမက က​လေး​လေးရဲ့စိတ်ထား​လေးကပါ
-            အရမ်းကိုဖြူစင်သန့်ရှင်းပါတယ်ဗျ။
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            က​လေး​လေးရဲ့ ကြင်နာမှု၊ က​လေး​လေးရဲ့အပြုံး​လေး​တွေ၊ က​လေး​လေး
-            ကိုယ်တိုင်​တောင်သတိမထားမိပဲ လုပ်လိုက်တဲ့ အပြုမူ​လေး​တွေက ကိုကိုကို
-            ​နေ့တိုင်းပိုပြီးအချစ်တိုး​စေပါတယ်ဗျ 😍
-          </p>
-          <p className="font-display text-xl sm:text-2xl md:text-3xl text-amber-700 italic mt-8">
-            I love your attitude 💘
-          </p>
-        </section>
-
-        {/* Section 4 */}
-        <section className="letter-section mb-16 sm:mb-20 animate-fade-up delay-6">
-          <h2 className="section-title font-display text-2xl sm:text-3xl md:text-4xl text-stone-800 mb-8">
-            Our Moments
-          </h2>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose">
-            က​လေး​လေးနဲ့ အတူရှိတဲ့အချိန်​တွေက ကိုကိုကို တန်ဖိုးထားရတဲ့
-            အမှတ်တရ​တွေ အများကြီး​ပေးခဲ့ ပါတယ်ဗျ။
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            ​သေးငယ်တဲ့ အခိုက်အတန့်​တွေကအစ ကြီးမားတဲ့အဖြစ်အပျက်​တွေအထိ
-            က​လေး​လေးနဲ့အတူရှိ​နေလိုသာ ပိုပြီးထူးခြားခဲ့တာပါဗျ 😍
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            က​လေး​​လေး ဟာကိုကိုရည်းစားတင်မဟုတ်ဘဲ ကိုကိုရဲ့​ပျော်ရွှင်မှု၊
-            ကိုကိုရဲ့လုံခြုံရာ​နေရာ​လေးနဲ့ ကိုကိုအတွက်
-            အ​ရေးပါဆုံးသူတစ်​ယောက်ပါဗျ 🥰
-          </p>
-        </section>
-
-        {/* Section 5 */}
-        <section className="letter-section mb-16 sm:mb-20 animate-fade-up delay-7">
-          <h2 className="section-title font-display text-2xl sm:text-3xl md:text-4xl text-stone-800 mb-8">
-            I Believe In You
-          </h2>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose">
-            က​လေး​လေးရဲ့ အိမ်မက်​တွေ၊ က​လေး​လေးရဲ့ လုပ်နိုင်စွမ်း​တွေအားလုံးကို
-            ကိုကိုယုံကြည်ပါတယ်ဗျ။ က​လေး​လေး ဟာ ဘယ်​တော့မှမညံ့ပါဘူးဗျ။
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            က​လေး​လေးက အလားအလာ​တွေအများကြီးရှိသလို က​လေး​လေးရဲ့အနာဂတ်ဟာလည်း
-            အမြဲ​တောက်ပ​နေမှာပါဗျ 🥰
-          </p>
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-6">
-            ဘယ်လိုလို အခက်အခဲ​တွေဖြစ်​နေပ​စေ က​လေး​လေး​ကျော်ဖြတ်နိုင်မှာဖြစ်သလို
-            ကိုကိုလည်း က​လေး​လေး​ဘေးက​နေ အမြဲတမ်း ပံ့ပိုး​ပေးပြီး
-            အား​ပေး​နေမယ့်သူတစ်​ယောက် ဖြစ်​နေမှာပါဗျ 🥰
-          </p>
-        </section>
-
-        {/* Wishes Section */}
-        <section className="my-16 sm:my-20 md:my-24 text-center animate-fade-up delay-7">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-stone-800 mb-12">
-            Birthday Wishes
-          </h2>
-          <div className="max-w-2xl mx-auto space-y-6 sm:space-y-8">
-            <p className="font-body text-stone-600 text-lg sm:text-xl md:text-2xl italic leading-relaxed">
-              အိမ်မက်​တွေ ​အောင်မြင်စွာဖြစ်လာပါ​စေ 🥰
-            </p>
-            <p className="font-body text-stone-600 text-lg sm:text-xl md:text-2xl italic leading-relaxed">
-              ဘ၀မှာ လွတ်လပ်​သော သူတစ်​ယောက်ဖြစ်​ပါ​စေ
-            </p>
-            <p className="font-body text-stone-600 text-lg sm:text-xl md:text-2xl italic leading-relaxed">
-              အမြဲ​ပျော်ရွှင် ​အေးချမ်းရ​သော ဘ၀​လေးရပါ​စေ
-            </p>
-            <p className="font-body text-stone-600 text-lg sm:text-xl md:text-2xl italic leading-relaxed">
-              ကျန်းကျန်းမာမာ ချမ်းချမ်းသာသာ နဲ့ဖြတ်​ကျော်နိုင်ပါ​စေ 😇
-            </p>
-          </div>
-        </section>
-
-        {/* Gratitude */}
-        <section className="letter-section mb-16 sm:mb-20 animate-fade-up delay-7">
-          <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose">
-            ကိုကိုကို ချစ်​ပေးလို၊ နားလည်​ပေးလိုနဲ့ က​လေး​လေးရှိရုံနဲ့တင်
-            ကိုကိုဘ၀ကို ပို​ကောင်း​အောင် လုပ်​ပေးလို ​ကျေးဇူးအများကြီးတင်ပါတယ်ဗျ
-            🥰
-          </p>
-        </section>
-
-        {/* Final English Section */}
-        <section className="my-16 sm:my-20 md:my-24 py-12 sm:py-16 md:py-20 px-6 sm:px-8 md:px-12 bg-gradient-to-br from-amber-50 via-rose-50 to-stone-50 border-2 border-amber-200 text-center animate-fade-up delay-7 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-t from-amber-100 to-transparent opacity-10 pointer-events-none"></div>
-          <div className="relative z-10">
-            <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-stone-800 italic leading-snug">
-              "I'll always do my best to make you feel as special as you are"
-            </p>
-            <div className="flex justify-center my-10">
-              <div className="section-divider"></div>
-            </div>
-            <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose max-w-2xl mx-auto">
-              Happy 20th birthday once again, my love. This is just the
-              beginning of something beautiful, and I'm so excited to see where
-              life takes us together.
-            </p>
-            <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-8 max-w-2xl mx-auto">
-              I love you more than you know ❤️
-            </p>
-            <p className="font-body text-stone-700 text-lg sm:text-xl md:text-2xl leading-relaxed lg:leading-loose mt-8 max-w-2xl mx-auto">
-              You are the only one I want to marry. I believe we will achieve
-              our dream 🤝🥰
-            </p>
-          </div>
-        </section>
-
         {/* Footer with hearts (unchanged) */}
         <footer
           className="text-center py-16 sm:py-20 md:py-24 relative"
           ref={heartContainerRef}
         >
           <p className="font-display text-4xl sm:text-5xl md:text-6xl text-amber-800 romantic-glow">
-            Forever Yours 💘
+            Forever your idiot 🫂❤️
           </p>
           <button
             onClick={createHearts}

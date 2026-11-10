@@ -1,9 +1,9 @@
-# 💌 A Birthday Surprise for the One Who Has My Heart
+# 💌 A 10 Month Anniversary Surprise for the One Who Has My Heart
 
-A fully interactive, story‑driven birthday web experience built with **React**, **Three.js**, **GSAP**, and a whole lot of love.  
+A fully interactive, story‑driven anniversary web experience built with **React**, **Three.js**, **GSAP**, and a whole lot of love.  
 She’ll type a secret code, blow out a 3D cake through the microphone, and unwrap memories, songs, and messages made just for her.
 
-🌐 **Live site → [https://girl-friend-birthday-website.vercel.app](https://girl-friend-birthday-website.vercel.app)**  
+🌐 **Original project live site → [https://girl-friend-birthday-website.vercel.app](https://girl-friend-birthday-website.vercel.app)**  
 
 
 ![Live status](https://img.shields.io/badge/live-vercel-success?logo=vercel)  

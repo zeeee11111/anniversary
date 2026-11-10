@@ -98,14 +98,14 @@ export default function BirthdayCelebration() {
           />
         </defs>
         <text
-          fontSize="54"
+          fontSize="44"
           fontWeight="700"
           fontFamily="'Playfair Display', serif"
           fill="#FF0000"
           textAnchor="middle"
         >
           <textPath href="#rainbowPath" startOffset="50%">
-            Happy 20th Birthday My baby Girl!
+            Happy 10 Month Anniversary, My Love!
           </textPath>
         </text>
       </svg>

@@ -181,7 +181,7 @@ export default function BlowCake() {
               fontSize: "clamp(1rem, 3.5vw, 1.4rem)",
             }}
           >
-            🎉 You did it! Happy Birthday!
+            🎉 You did it! Happy 10 Month Anniversary!
           </p>
         )}
       </div>
